@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04514DC9234A255000D51CD0 /* QuoteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DC8234A255000D51CD0 /* QuoteProvider.swift */; };
+		04514DCB234A259E00D51CD0 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DCA234A259E00D51CD0 /* QuoteCell.swift */; };
+		04514DCD234A268500D51CD0 /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DCC234A268500D51CD0 /* QuotesTableViewController.swift */; };
+		04514DCF234A3A5F00D51CD0 /* QuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DCE234A3A5F00D51CD0 /* QuoteDetailViewController.swift */; };
+		04514DD1234E445C00D51CD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04514DD0234E445C00D51CD0 /* Images.xcassets */; };
+		04514DD4234F40B700D51CD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04514DD2234F40B700D51CD0 /* Main.storyboard */; };
+		04514DD62358D43900D51CD0 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DD52358D43900D51CD0 /* Converter.swift */; };
+		04514DD82358D46F00D51CD0 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DD72358D46F00D51CD0 /* ConverterViewController.swift */; };
+		04514DDA2358D65700D51CD0 /* QuotesNameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DD92358D65700D51CD0 /* QuotesNameTableViewController.swift */; };
+		04514DDC2358D95400D51CD0 /* QuoteNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DDB2358D95400D51CD0 /* QuoteNameCell.swift */; };
+		04514DDE23644BA000D51CD0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DDD23644BA000D51CD0 /* AboutViewController.swift */; };
 		046719C623465B0E00FAF6DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046719C523465B0E00FAF6DC /* AppDelegate.swift */; };
-		046719C823465B0E00FAF6DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046719C723465B0E00FAF6DC /* ViewController.swift */; };
-		046719CB23465B0E00FAF6DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046719C923465B0E00FAF6DC /* Main.storyboard */; };
-		046719CD23465B1000FAF6DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046719CC23465B1000FAF6DC /* Assets.xcassets */; };
 		046719D023465B1000FAF6DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046719CE23465B1000FAF6DC /* LaunchScreen.storyboard */; };
 		046719DB23465B1000FAF6DC /* CryptoConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046719DA23465B1000FAF6DC /* CryptoConverterTests.swift */; };
 		046719E623465B1000FAF6DC /* CryptoConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046719E523465B1000FAF6DC /* CryptoConverterUITests.swift */; };
+		046719F423465B9700FAF6DC /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046719F323465B9700FAF6DC /* Quote.swift */; };
+		130CDEEA2699F31D57F88545 /* Pods_CryptoConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3966E0B21BF70A308E20EAC1 /* Pods_CryptoConverterTests.framework */; };
+		43D2D0A8866B3A4DE50BA8DA /* Pods_CryptoConverter_CryptoConverterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CDE988720C2E8B2A11851F /* Pods_CryptoConverter_CryptoConverterUITests.framework */; };
+		570E5A52A840712E8D99E7FC /* Pods_CryptoConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5236807103A58B73EFFE00BE /* Pods_CryptoConverter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +46,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04514DC8234A255000D51CD0 /* QuoteProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteProvider.swift; sourceTree = "<group>"; };
+		04514DCA234A259E00D51CD0 /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
+		04514DCC234A268500D51CD0 /* QuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableViewController.swift; sourceTree = "<group>"; };
+		04514DCE234A3A5F00D51CD0 /* QuoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewController.swift; sourceTree = "<group>"; };
+		04514DD0234E445C00D51CD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04514DD3234F40B700D51CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04514DD52358D43900D51CD0 /* Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		04514DD72358D46F00D51CD0 /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		04514DD92358D65700D51CD0 /* QuotesNameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesNameTableViewController.swift; sourceTree = "<group>"; };
+		04514DDB2358D95400D51CD0 /* QuoteNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteNameCell.swift; sourceTree = "<group>"; };
+		04514DDD23644BA000D51CD0 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		046719C223465B0E00FAF6DC /* CryptoConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046719C523465B0E00FAF6DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		046719C723465B0E00FAF6DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		046719CA23465B0E00FAF6DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		046719CC23465B1000FAF6DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046719CF23465B1000FAF6DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046719D123465B1000FAF6DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046719D623465B1000FAF6DC /* CryptoConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +67,18 @@
 		046719E123465B1000FAF6DC /* CryptoConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046719E523465B1000FAF6DC /* CryptoConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoConverterUITests.swift; sourceTree = "<group>"; };
 		046719E723465B1000FAF6DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046719F323465B9700FAF6DC /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		19AA052D1024649204A565DF /* Pods-CryptoConverter-CryptoConverterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoConverter-CryptoConverterUITests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoConverter-CryptoConverterUITests/Pods-CryptoConverter-CryptoConverterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3966E0B21BF70A308E20EAC1 /* Pods_CryptoConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5236807103A58B73EFFE00BE /* Pods_CryptoConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7C24614EF6DB21499B6174 /* Pods-CryptoConverter-CryptoConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoConverter-CryptoConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoConverter-CryptoConverterTests/Pods-CryptoConverter-CryptoConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7581758048AA5D9CE3D73D95 /* Pods-CryptoConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoConverterTests.release.xcconfig"; path = "Target Support Files/Pods-CryptoConverterTests/Pods-CryptoConverterTests.release.xcconfig"; sourceTree = "<group>"; };
+		7663D8C005E11BF7DAFB1967 /* Pods-CryptoConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoConverter.debug.xcconfig"; path = "Target Support Files/Pods-CryptoConverter/Pods-CryptoConverter.debug.xcconfig"; sourceTree = "<group>"; };
+		93CDE988720C2E8B2A11851F /* Pods_CryptoConverter_CryptoConverterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoConverter_CryptoConverterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56C56289E904F1118AD7E84 /* Pods-CryptoConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoConverterTests/Pods-CryptoConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD7E5D71BC302A7A1BF70F84 /* Pods-CryptoConverter-CryptoConverterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoConverter-CryptoConverterUITests.release.xcconfig"; path = "Target Support Files/Pods-CryptoConverter-CryptoConverterUITests/Pods-CryptoConverter-CryptoConverterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EB270C410206CC2FD6EAC9BC /* Pods-CryptoConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoConverter.release.xcconfig"; path = "Target Support Files/Pods-CryptoConverter/Pods-CryptoConverter.release.xcconfig"; sourceTree = "<group>"; };
+		FEB304E32F935953A73E1579 /* Pods-CryptoConverter-CryptoConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoConverter-CryptoConverterTests.release.xcconfig"; path = "Target Support Files/Pods-CryptoConverter-CryptoConverterTests/Pods-CryptoConverter-CryptoConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570E5A52A840712E8D99E7FC /* Pods_CryptoConverter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130CDEEA2699F31D57F88545 /* Pods_CryptoConverterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +102,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D2D0A8866B3A4DE50BA8DA /* Pods_CryptoConverter_CryptoConverterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		038373896179AFDB3C792406 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5236807103A58B73EFFE00BE /* Pods_CryptoConverter.framework */,
+				93CDE988720C2E8B2A11851F /* Pods_CryptoConverter_CryptoConverterUITests.framework */,
+				3966E0B21BF70A308E20EAC1 /* Pods_CryptoConverterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04514DC5234A244900D51CD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				046719F323465B9700FAF6DC /* Quote.swift */,
+				04514DD52358D43900D51CD0 /* Converter.swift */,
+				04514DC8234A255000D51CD0 /* QuoteProvider.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04514DC6234A245100D51CD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04514DCA234A259E00D51CD0 /* QuoteCell.swift */,
+				04514DDB2358D95400D51CD0 /* QuoteNameCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04514DC7234A245600D51CD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04514DCC234A268500D51CD0 /* QuotesTableViewController.swift */,
+				04514DCE234A3A5F00D51CD0 /* QuoteDetailViewController.swift */,
+				04514DD72358D46F00D51CD0 /* ConverterViewController.swift */,
+				04514DD92358D65700D51CD0 /* QuotesNameTableViewController.swift */,
+				04514DDD23644BA000D51CD0 /* AboutViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		046719B923465B0E00FAF6DC = {
 			isa = PBXGroup;
 			children = (
+				04514DC7234A245600D51CD0 /* Controller */,
+				04514DC6234A245100D51CD0 /* View */,
+				04514DC5234A244900D51CD0 /* Model */,
 				046719C423465B0E00FAF6DC /* CryptoConverter */,
 				046719D923465B1000FAF6DC /* CryptoConverterTests */,
 				046719E423465B1000FAF6DC /* CryptoConverterUITests */,
 				046719C323465B0E00FAF6DC /* Products */,
+				9836A5187AAC559DEFA77FE6 /* Pods */,
+				038373896179AFDB3C792406 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,10 +178,9 @@
 		046719C423465B0E00FAF6DC /* CryptoConverter */ = {
 			isa = PBXGroup;
 			children = (
+				04514DD2234F40B700D51CD0 /* Main.storyboard */,
+				04514DD0234E445C00D51CD0 /* Images.xcassets */,
 				046719C523465B0E00FAF6DC /* AppDelegate.swift */,
-				046719C723465B0E00FAF6DC /* ViewController.swift */,
-				046719C923465B0E00FAF6DC /* Main.storyboard */,
-				046719CC23465B1000FAF6DC /* Assets.xcassets */,
 				046719CE23465B1000FAF6DC /* LaunchScreen.storyboard */,
 				046719D123465B1000FAF6DC /* Info.plist */,
 			);
@@ -125,6 +205,22 @@
 			path = CryptoConverterUITests;
 			sourceTree = "<group>";
 		};
+		9836A5187AAC559DEFA77FE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7663D8C005E11BF7DAFB1967 /* Pods-CryptoConverter.debug.xcconfig */,
+				EB270C410206CC2FD6EAC9BC /* Pods-CryptoConverter.release.xcconfig */,
+				19AA052D1024649204A565DF /* Pods-CryptoConverter-CryptoConverterUITests.debug.xcconfig */,
+				DD7E5D71BC302A7A1BF70F84 /* Pods-CryptoConverter-CryptoConverterUITests.release.xcconfig */,
+				D56C56289E904F1118AD7E84 /* Pods-CryptoConverterTests.debug.xcconfig */,
+				7581758048AA5D9CE3D73D95 /* Pods-CryptoConverterTests.release.xcconfig */,
+				5E7C24614EF6DB21499B6174 /* Pods-CryptoConverter-CryptoConverterTests.debug.xcconfig */,
+				FEB304E32F935953A73E1579 /* Pods-CryptoConverter-CryptoConverterTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046719EA23465B1000FAF6DC /* Build configuration list for PBXNativeTarget "CryptoConverter" */;
 			buildPhases = (
+				6A097EA8D71ADE42A01445EC /* [CP] Check Pods Manifest.lock */,
 				046719BE23465B0E00FAF6DC /* Sources */,
 				046719BF23465B0E00FAF6DC /* Frameworks */,
 				046719C023465B0E00FAF6DC /* Resources */,
+				22F5AF34ACB2030F46585CA8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046719ED23465B1000FAF6DC /* Build configuration list for PBXNativeTarget "CryptoConverterTests" */;
 			buildPhases = (
+				485B5737FDFE2BD756EED9A5 /* [CP] Check Pods Manifest.lock */,
 				046719D223465B1000FAF6DC /* Sources */,
 				046719D323465B1000FAF6DC /* Frameworks */,
 				046719D423465B1000FAF6DC /* Resources */,
@@ -167,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046719F023465B1000FAF6DC /* Build configuration list for PBXNativeTarget "CryptoConverterUITests" */;
 			buildPhases = (
+				C4F1015A3CF999297DD7B929 /* [CP] Check Pods Manifest.lock */,
 				046719DD23465B1000FAF6DC /* Sources */,
 				046719DE23465B1000FAF6DC /* Frameworks */,
 				046719DF23465B1000FAF6DC /* Resources */,
+				6F459F05C7EBBA5B382143EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,9 +330,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04514DD4234F40B700D51CD0 /* Main.storyboard in Resources */,
+				04514DD1234E445C00D51CD0 /* Images.xcassets in Resources */,
 				046719D023465B1000FAF6DC /* LaunchScreen.storyboard in Resources */,
-				046719CD23465B1000FAF6DC /* Assets.xcassets in Resources */,
-				046719CB23465B0E00FAF6DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +352,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22F5AF34ACB2030F46585CA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoConverter/Pods-CryptoConverter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoConverter/Pods-CryptoConverter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoConverter/Pods-CryptoConverter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		485B5737FDFE2BD756EED9A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoConverterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A097EA8D71ADE42A01445EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoConverter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F459F05C7EBBA5B382143EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoConverter-CryptoConverterUITests/Pods-CryptoConverter-CryptoConverterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoConverter-CryptoConverterUITests/Pods-CryptoConverter-CryptoConverterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoConverter-CryptoConverterUITests/Pods-CryptoConverter-CryptoConverterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4F1015A3CF999297DD7B929 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoConverter-CryptoConverterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		046719BE23465B0E00FAF6DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046719C823465B0E00FAF6DC /* ViewController.swift in Sources */,
+				04514DCB234A259E00D51CD0 /* QuoteCell.swift in Sources */,
+				04514DCF234A3A5F00D51CD0 /* QuoteDetailViewController.swift in Sources */,
+				04514DDE23644BA000D51CD0 /* AboutViewController.swift in Sources */,
+				046719F423465B9700FAF6DC /* Quote.swift in Sources */,
+				04514DDC2358D95400D51CD0 /* QuoteNameCell.swift in Sources */,
+				04514DD62358D43900D51CD0 /* Converter.swift in Sources */,
+				04514DDA2358D65700D51CD0 /* QuotesNameTableViewController.swift in Sources */,
+				04514DCD234A268500D51CD0 /* QuotesTableViewController.swift in Sources */,
 				046719C623465B0E00FAF6DC /* AppDelegate.swift in Sources */,
+				04514DD82358D46F00D51CD0 /* ConverterViewController.swift in Sources */,
+				04514DC9234A255000D51CD0 /* QuoteProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +506,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		046719C923465B0E00FAF6DC /* Main.storyboard */ = {
+		04514DD2234F40B700D51CD0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				046719CA23465B0E00FAF6DC /* Base */,
+				04514DD3234F40B700D51CD0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -430,6 +643,7 @@
 		};
 		046719EB23465B1000FAF6DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7663D8C005E11BF7DAFB1967 /* Pods-CryptoConverter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +661,7 @@
 		};
 		046719EC23465B1000FAF6DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB270C410206CC2FD6EAC9BC /* Pods-CryptoConverter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +679,7 @@
 		};
 		046719EE23465B1000FAF6DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D56C56289E904F1118AD7E84 /* Pods-CryptoConverterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +700,7 @@
 		};
 		046719EF23465B1000FAF6DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7581758048AA5D9CE3D73D95 /* Pods-CryptoConverterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +721,7 @@
 		};
 		046719F123465B1000FAF6DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19AA052D1024649204A565DF /* Pods-CryptoConverter-CryptoConverterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +741,7 @@
 		};
 		046719F223465B1000FAF6DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E5D71BC302A7A1BF70F84 /* Pods-CryptoConverter-CryptoConverterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

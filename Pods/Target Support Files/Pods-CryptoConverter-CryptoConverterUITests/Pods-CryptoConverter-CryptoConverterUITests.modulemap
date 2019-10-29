@@ -1,0 +1,6 @@
+framework module Pods_CryptoConverter_CryptoConverterUITests {
+  umbrella header "Pods-CryptoConverter-CryptoConverterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
