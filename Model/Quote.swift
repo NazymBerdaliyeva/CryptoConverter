@@ -21,7 +21,7 @@ public struct Quote: Codable {
     var totalSupply: String = ""
     var percentChange1h: String = ""
     var percentChange24h: String = ""
-    var percentChanage7d: String = ""
+    var percentChange7d: String = ""
     var lastUpdated : String = ""
     
     private enum CodingKeys: String, CodingKey {
@@ -37,9 +37,26 @@ public struct Quote: Codable {
         case totalSupply = "total_supply"
         case percentChange1h = "percent_change_1h"
         case percentChange24h = "percent_change_24h"
-        case percentChanage7d = "percent_change_7d"
+        case percentChange7d = "percent_change_7d"
         case lastUpdated = "last_updated"
     }
+    
+    init(fromCached cached: QuoteCached) {
+        self.id = cached.id
+        self.name = cached.name
+        self.symbol = cached.symbol
+        self.rank = cached.rank
+        self.priceUsd = cached.priceUsd
+        self.priceBtc = cached.priceBtc
+        self.volumeUsd24h = cached.volumeUsd24h
+        self.marketCapUsd = cached.marketCapUsd
+        self.availableSupply = cached.availableSupply
+        self.totalSupply = cached.totalSupply
+        self.percentChange1h = cached.percentChange1h
+        self.percentChange24h = cached.percentChange24h
+        self.percentChange7d = cached.percentChange7d
+    }
+    
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decode(String.self, forKey: .id)
@@ -54,7 +71,7 @@ public struct Quote: Codable {
         totalSupply = try container.decode(String.self, forKey: .totalSupply)
         percentChange1h = try container.decode(String.self, forKey: .percentChange1h)
         percentChange24h = try container.decode(String.self, forKey: .percentChange24h)
-        percentChanage7d = try container.decode(String.self, forKey: .percentChanage7d)
+        percentChange7d = try container.decode(String.self, forKey: .percentChange7d)
         lastUpdated = try container.decode(String.self, forKey: .lastUpdated)
     }
 }

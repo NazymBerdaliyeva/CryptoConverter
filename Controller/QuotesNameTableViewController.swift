@@ -17,6 +17,7 @@ class QuotesNameTableViewController: UITableViewController {
     var quoteProvider = QuoteProvider()
     var quotes: [Quote] = []
     let hud = JGProgressHUD(style: .light)
+    let realmHelper = RealmHelper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,19 @@ class QuotesNameTableViewController: UITableViewController {
         hud.show(in: self.view)
         
         NotificationCenter.default.addObserver(self, selector: #selector(getQuotes), name: Notification.Name("quotesTransfer"), object: nil)
+        
+        if let quotes = realmHelper.fetchQuotesFromStorage(), quotes.count != 0 {
+            self.quotes = quotes
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            self.hud.dismiss(animated: true)
+        }  else {
+            quoteProvider.loadQuoteData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     @objc func getQuotes(notif: Notification) {
@@ -64,7 +78,6 @@ class QuotesNameTableViewController: UITableViewController {
         
         if let selectedIndex = indexPath {
             let selectedQuote = quotes[(selectedIndex.row)]
-           
             NotificationCenter.default.post(name: Notification.Name("selectedQuote"), object: selectedQuote, userInfo: nil)
       
         }

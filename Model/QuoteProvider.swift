@@ -9,17 +9,17 @@
 import Foundation
 
 class QuoteProvider {
-    private var quotes: [Quote] = []
+//    private var quotes: [Quote] = []
     var i = 1
     private var timer: Timer?
     
     init(){
-        self.loadQuoteData {}
+//        self.loadQuoteData()
         timer = Timer.scheduledTimer(withTimeInterval: 5.0,repeats: true,
-                                     block: {[weak self] timer in self?.loadQuoteData {}})
+                                     block: {[weak self] timer in self?.loadQuoteData()})
     }
     
-    func loadQuoteData(completion: @escaping () -> Void) {
+    func loadQuoteData() {
         guard let url = URL(string: "https://api.coinmarketcap.com/v1/ticker/") else {
             return
         }
@@ -30,11 +30,9 @@ class QuoteProvider {
                 guard let data = data else { return }
                 do {
                     let quotes = try JSONDecoder().decode([Quote].self, from: data)
-                    self.quotes = quotes
                     
                     DispatchQueue.main.async {
-//                         completion()
-                         NotificationCenter.default.post(name: Notification.Name("quotesTransfer"), object: self.quotes, userInfo: nil)
+                         NotificationCenter.default.post(name: Notification.Name("quotesTransfer"), object: quotes, userInfo: nil)
                     }
                 } catch let jsonErr {
                     print("Error serializing json:", jsonErr)

@@ -79,7 +79,6 @@ class QuoteDetailViewController: UIViewController {
             rankLabel.text = rank
             h24changeLabel.text = "\(h24change)%"
             availableSupplyLabel.text = "\(availableSupply)"
-            print(lastUpdated)
         }
     }
     

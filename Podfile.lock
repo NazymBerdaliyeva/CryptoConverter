@@ -1,16 +1,26 @@
 PODS:
   - JGProgressHUD (2.1)
+  - Realm (3.20.0):
+    - Realm/Headers (= 3.20.0)
+  - Realm/Headers (3.20.0)
+  - RealmSwift (3.20.0):
+    - Realm (= 3.20.0)
 
 DEPENDENCIES:
   - JGProgressHUD
+  - RealmSwift
 
 SPEC REPOS:
   trunk:
     - JGProgressHUD
+    - Realm
+    - RealmSwift
 
 SPEC CHECKSUMS:
   JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+  Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
+  RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
 
-PODFILE CHECKSUM: 40b50ad074db24896c1511f24e894a09acb801fe
+PODFILE CHECKSUM: 36e4fc72d5913a3031456aad0a99b405099ec6bb
 
 COCOAPODS: 1.8.0.beta.2

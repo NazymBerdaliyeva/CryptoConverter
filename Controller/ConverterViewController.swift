@@ -35,6 +35,7 @@ class ConverterViewController: UIViewController {
     var firstQuote: Quote?
     var secondQuote: Quote?
     var newConverter: Converter?
+    let realmHelper = RealmHelper()
     
     @objc func getSelectedQuote(notif: Notification) {
         if let data = notif.object as? Quote
@@ -46,10 +47,10 @@ class ConverterViewController: UIViewController {
             let index = quoteNum
             let coin = UIImage(named: icon)
             if tag == 1 {
-                firstQuote = quotes[index]
-                newConverter = Converter(baseQuote: quotes[index])
-                firstQuoteButton.setBackgroundImage(coin, for: UIControl.State.normal)
-                convertAndShowToSecondTF()
+                    firstQuote = quotes[index]
+                    newConverter = Converter(baseQuote: quotes[index])
+                    firstQuoteButton.setBackgroundImage(coin, for: UIControl.State.normal)
+                    convertAndShowToSecondTF()
             } else {
                 guard let firstQuote = firstQuote else {return}
                 newConverter = Converter(baseQuote: firstQuote)
@@ -72,6 +73,9 @@ class ConverterViewController: UIViewController {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(getQuotes), name: Notification.Name("quotesTransfer"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(getSelectedQuote), name: Notification.Name("selectedQuote"), object: nil)
+        if let quotes = realmHelper.fetchQuotesFromStorage(), quotes.count != 0 {
+            self.quotes = quotes
+        } 
     }
     
     func convertAndShowToSecondTF() {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		04514DDA2358D65700D51CD0 /* QuotesNameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DD92358D65700D51CD0 /* QuotesNameTableViewController.swift */; };
 		04514DDC2358D95400D51CD0 /* QuoteNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DDB2358D95400D51CD0 /* QuoteNameCell.swift */; };
 		04514DDE23644BA000D51CD0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DDD23644BA000D51CD0 /* AboutViewController.swift */; };
+		04514DE123695D9300D51CD0 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DE023695D9300D51CD0 /* RealmHelper.swift */; };
+		04514DE323696ACE00D51CD0 /* QuoteCached.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04514DE223696ACE00D51CD0 /* QuoteCached.swift */; };
 		046719C623465B0E00FAF6DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046719C523465B0E00FAF6DC /* AppDelegate.swift */; };
 		046719D023465B1000FAF6DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046719CE23465B1000FAF6DC /* LaunchScreen.storyboard */; };
 		046719DB23465B1000FAF6DC /* CryptoConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046719DA23465B1000FAF6DC /* CryptoConverterTests.swift */; };
@@ -57,6 +59,8 @@
 		04514DD92358D65700D51CD0 /* QuotesNameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesNameTableViewController.swift; sourceTree = "<group>"; };
 		04514DDB2358D95400D51CD0 /* QuoteNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteNameCell.swift; sourceTree = "<group>"; };
 		04514DDD23644BA000D51CD0 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		04514DE023695D9300D51CD0 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		04514DE223696ACE00D51CD0 /* QuoteCached.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCached.swift; sourceTree = "<group>"; };
 		046719C223465B0E00FAF6DC /* CryptoConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046719C523465B0E00FAF6DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		046719CF23465B1000FAF6DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				046719F323465B9700FAF6DC /* Quote.swift */,
 				04514DD52358D43900D51CD0 /* Converter.swift */,
 				04514DC8234A255000D51CD0 /* QuoteProvider.swift */,
+				04514DE223696ACE00D51CD0 /* QuoteCached.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,9 +155,18 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		04514DDF23695D6E00D51CD0 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				04514DE023695D9300D51CD0 /* RealmHelper.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		046719B923465B0E00FAF6DC = {
 			isa = PBXGroup;
 			children = (
+				04514DDF23695D6E00D51CD0 /* Storage */,
 				04514DC7234A245600D51CD0 /* Controller */,
 				04514DC6234A245100D51CD0 /* View */,
 				04514DC5234A244900D51CD0 /* Model */,
@@ -217,7 +231,6 @@
 				5E7C24614EF6DB21499B6174 /* Pods-CryptoConverter-CryptoConverterTests.debug.xcconfig */,
 				FEB304E32F935953A73E1579 /* Pods-CryptoConverter-CryptoConverterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -461,6 +474,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04514DCB234A259E00D51CD0 /* QuoteCell.swift in Sources */,
+				04514DE123695D9300D51CD0 /* RealmHelper.swift in Sources */,
+				04514DE323696ACE00D51CD0 /* QuoteCached.swift in Sources */,
 				04514DCF234A3A5F00D51CD0 /* QuoteDetailViewController.swift in Sources */,
 				04514DDE23644BA000D51CD0 /* AboutViewController.swift in Sources */,
 				046719F423465B9700FAF6DC /* Quote.swift in Sources */,

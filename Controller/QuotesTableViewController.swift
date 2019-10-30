@@ -13,32 +13,56 @@ class QuotesTableViewController: UITableViewController {
 
     @IBAction func refreshBarButton(_ sender: UIBarButtonItem) {
         self.hud.dismiss(animated: true)
-        quoteProvider.loadQuoteData {
+        quoteProvider.loadQuoteData()
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        }
     }
     let hud = JGProgressHUD(style: .dark)
     var quoteProvider = QuoteProvider()
-    var oldQuotes: [Quote] = []
-    var newQuotes: [Quote] = []
-    var timer: Timer?
-    var timerStatus = true
+    var quotes: [Quote] = []
+    let realmHelper = RealmHelper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(getQuotes), name: Notification.Name("quotesTransfer"), object: nil)
+        
+        let isFirstStart = !UserDefaults.standard.bool(forKey: "alreadyStartedBefore")
+        if isFirstStart {
+            self.tableView.isHidden = true
+            let alert = UIAlertController(title: "Hello", message: "Welcome to Crypto Converter :)", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Get started", style: UIAlertAction.Style.default, handler: { _ in
+                UserDefaults.standard.set(true, forKey: "alreadyStartedBefore")
+                
+                self.tableView.isHidden = false
+                self.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
         
         hud.textLabel.text = "Loading"
         hud.show(in: self.view)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(getQuotes), name: Notification.Name("quotesTransfer"), object: nil)
+        if let quotes = realmHelper.fetchQuotesFromStorage(), quotes.count != 0 {
+            self.quotes = quotes
+            print("quotes here : \(quotes.count)")
+            self.hud.dismiss(animated: true)
+        } else {
+            quoteProvider.loadQuoteData()
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+        }
     }
     
     
     @objc func getQuotes(notif: Notification) {
         if let quotes = notif.object as? [Quote] {
-            newQuotes = quotes
+            realmHelper.writeQuotesToStorage(quotes: quotes)
+            self.quotes = quotes
             self.hud.dismiss(animated: true)
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -46,11 +70,11 @@ class QuotesTableViewController: UITableViewController {
         }
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newQuotes.count
+        return quotes.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let quote = newQuotes[indexPath.row]
+        let quote = quotes[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "QuoteCell", for: indexPath) as? QuoteCell {
             cell.quoteLabel.text = quote.name
             cell.symbolLabel.text = quote.symbol
@@ -73,11 +97,10 @@ class QuotesTableViewController: UITableViewController {
         if segue.identifier == "quotesListToDetail" {
             if let cell = sender as? QuoteCell {
                 if let indexPath = tableView.indexPath(for: cell) {
-                    let quote = newQuotes[indexPath.row]
+                    let quote = quotes[indexPath.row]
                     
                     let detailVC = segue.destination as? QuoteDetailViewController
                     detailVC?.quote = quote
-                    print(quote)
                 }
                 
             }
